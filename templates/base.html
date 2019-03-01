@@ -35,24 +35,12 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="resume.html">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="education.html">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="interests.html">Interests</a>
-        </li>
-	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="blog.html">Blog</a>
-        </li>
-      </ul>
+          {% for page in pages %}
+        <li> <a class="nav-link js-scroll-trigger" active href ="{{ page.links }}"> {{page.title }}</a></li>
+          {% endfor %}
+      </ul>  
     </div>
   </nav>  <!-- top template-->
   
