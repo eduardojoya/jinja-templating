@@ -1,5 +1,5 @@
 def main():
-    List with dictionary for information on site pages
+    #List with dictionary for information on site pages
 pages = [    
         {   'filename': 'content/index.html',
             'output': 'docs/index.html',
